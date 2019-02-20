@@ -1,5 +1,9 @@
-package com.huang.pims.Constants;
+package com.huang.pims.constants;
 
+/**
+ * 常量类
+ * @author huang
+ */
 public class Constants {
 
     /**

@@ -1,4 +1,4 @@
-package com.huang.pims.Constants;
+package com.huang.pims.constants;
 
 /**
  * 字符集常量类

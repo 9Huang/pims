@@ -2,7 +2,7 @@ package com.huang.pims.configuration;
 
 import ch.qos.logback.classic.pattern.ClassicConverter;
 import ch.qos.logback.classic.spi.ILoggingEvent;
-import com.huang.pims.Constants.Constants;
+import com.huang.pims.constants.Constants;
 
 import java.net.Inet4Address;
 import java.net.InetAddress;
