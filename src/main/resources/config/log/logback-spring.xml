@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <conversionRule conversionWord="ip" converterClass="com.huang.pims.configuration.IpLogConfig"/>
+
+    <springProperty scope="context" name="log.application.name" source="log.application.name"/>
+    <springProperty scope="context" name="log.file.maxFileSize" source="log.file.maxFileSize"/>
+    <springProperty scope="context" name="log.file.maxHistory" source="log.file.maxHistory"/>
+    <springProperty scope="context" name="log.file.name" source="log.file.name"/>
+
+    <property name="LOG_PATTERN" value="[${log.application.name}] [%ip] [${PID}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] [%p] [%t] [%c] [%M] [%L] : %m%n"/>
+    <property name="CONSOLE_LOG_PATTERN" value="%highlight([${log.application.name}] [%ip]) [${PID}] [%d{yyyy-MM-dd HH:mm:ss.SSS}] %cyan([%p]) [%t] %boldMagenta([%c]) : %boldGreen(%m%n)"/>
+
+    <!-- 控制台打印日志的相关配置 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- 日志格式 -->
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- 格式化输出 -->
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <!-- 控制台也要使用UTF-8，不要使用GBK，否则会中文乱码 -->
+            <charset>UTF-8</charset>
+        </encoder>
+        <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+    <!-- 业务日志 -->
+    <appender name="APP_LOG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>data/logs/${log.file.name}.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <FileNamePattern>data/log/%d{yyyy-MM-dd}.log</FileNamePattern>
+            <!--日志文件保留天数-->
+            <MaxHistory>${log.file.maxHistory}</MaxHistory>
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <!-- 格式化输出 -->
+            <pattern>${LOG_PATTERN}</pattern>
+            <!-- 记录日志的编码:此处设置字符集 - -->
+            <charset>UTF-8</charset>
+        </encoder>
+        <!--日志文件最大的大小-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>${log.file.maxFileSize}</MaxFileSize>
+        </triggeringPolicy>
+        <!-- 过滤掉 TRACE 和 DEBUG 级别的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+    </appender>
+
+
+    <!-- 文件保存日志的相关配置 -->
+    <appender name="ERROR-OUT" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!-- 保存日志文件的路径 -->
+        <file>data/logs/${log.file.name}.error.log</file>
+        <!-- 日志格式 -->
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern>
+        </encoder>
+        <!-- 日志级别过滤器 -->
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <!-- 过滤的级别 -->
+            <level>ERROR</level>
+            <!-- 匹配时的操作：接收（记录） -->
+            <onMatch>ACCEPT</onMatch>
+            <!-- 不匹配时的操作：拒绝（不记录） -->
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <!-- 循环政策：基于时间创建日志文件 -->
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- 日志文件名格式 -->
+            <fileNamePattern>%d{yyyy-MM-dd}.error.log</fileNamePattern>
+            <!-- 最大保存时间：30天-->
+            <maxHistory>${log.file.maxHistory}</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <!-- 基于debug处理日志：具体控制台或者文件对日志级别的处理还要看所在appender配置的filter，如果没有配置filter，则使用root配置 -->
+    <root level="debug">
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="APP_LOG" />
+        <!--<appender-ref ref="ERROR-OUT" />-->
+    </root>
+</configuration>

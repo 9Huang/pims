@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huang.pims.mapper.base.PersonalAddressInfoMapper">
+  <resultMap id="BaseResultMap" type="com.huang.pims.beans.base.PersonalAddressInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="country_id" jdbcType="BIGINT" property="countryId" />
+    <result column="province_id" jdbcType="BIGINT" property="provinceId" />
+    <result column="city_id" jdbcType="BIGINT" property="cityId" />
+    <result column="area_id" jdbcType="BIGINT" property="areaId" />
+    <result column="detailed_address" jdbcType="VARCHAR" property="detailedAddress" />
+    <result column="postal_code" jdbcType="VARCHAR" property="postalCode" />
+    <result column="contact_name" jdbcType="VARCHAR" property="contactName" />
+    <result column="contact_user_id" jdbcType="BIGINT" property="contactUserId" />
+    <result column="mobile_area" jdbcType="INTEGER" property="mobileArea" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, country_id, province_id, city_id, area_id, detailed_address, postal_code, contact_name, 
+    contact_user_id, mobile_area, mobile
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 'true' as QUERYID,
+    <include refid="Base_Column_List" />
+    from personal_address_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from personal_address_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.huang.pims.beans.base.PersonalAddressInfo">
+    insert into personal_address_info (id, country_id, province_id, 
+      city_id, area_id, detailed_address, 
+      postal_code, contact_name, contact_user_id, 
+      mobile_area, mobile)
+    values (#{id,jdbcType=BIGINT}, #{countryId,jdbcType=BIGINT}, #{provinceId,jdbcType=BIGINT}, 
+      #{cityId,jdbcType=BIGINT}, #{areaId,jdbcType=BIGINT}, #{detailedAddress,jdbcType=VARCHAR}, 
+      #{postalCode,jdbcType=VARCHAR}, #{contactName,jdbcType=VARCHAR}, #{contactUserId,jdbcType=BIGINT}, 
+      #{mobileArea,jdbcType=INTEGER}, #{mobile,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.huang.pims.beans.base.PersonalAddressInfo">
+    insert into personal_address_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="countryId != null">
+        country_id,
+      </if>
+      <if test="provinceId != null">
+        province_id,
+      </if>
+      <if test="cityId != null">
+        city_id,
+      </if>
+      <if test="areaId != null">
+        area_id,
+      </if>
+      <if test="detailedAddress != null">
+        detailed_address,
+      </if>
+      <if test="postalCode != null">
+        postal_code,
+      </if>
+      <if test="contactName != null">
+        contact_name,
+      </if>
+      <if test="contactUserId != null">
+        contact_user_id,
+      </if>
+      <if test="mobileArea != null">
+        mobile_area,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="countryId != null">
+        #{countryId,jdbcType=BIGINT},
+      </if>
+      <if test="provinceId != null">
+        #{provinceId,jdbcType=BIGINT},
+      </if>
+      <if test="cityId != null">
+        #{cityId,jdbcType=BIGINT},
+      </if>
+      <if test="areaId != null">
+        #{areaId,jdbcType=BIGINT},
+      </if>
+      <if test="detailedAddress != null">
+        #{detailedAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="postalCode != null">
+        #{postalCode,jdbcType=VARCHAR},
+      </if>
+      <if test="contactName != null">
+        #{contactName,jdbcType=VARCHAR},
+      </if>
+      <if test="contactUserId != null">
+        #{contactUserId,jdbcType=BIGINT},
+      </if>
+      <if test="mobileArea != null">
+        #{mobileArea,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.huang.pims.beans.base.PersonalAddressInfo">
+    update personal_address_info
+    <set>
+      <if test="countryId != null">
+        country_id = #{countryId,jdbcType=BIGINT},
+      </if>
+      <if test="provinceId != null">
+        province_id = #{provinceId,jdbcType=BIGINT},
+      </if>
+      <if test="cityId != null">
+        city_id = #{cityId,jdbcType=BIGINT},
+      </if>
+      <if test="areaId != null">
+        area_id = #{areaId,jdbcType=BIGINT},
+      </if>
+      <if test="detailedAddress != null">
+        detailed_address = #{detailedAddress,jdbcType=VARCHAR},
+      </if>
+      <if test="postalCode != null">
+        postal_code = #{postalCode,jdbcType=VARCHAR},
+      </if>
+      <if test="contactName != null">
+        contact_name = #{contactName,jdbcType=VARCHAR},
+      </if>
+      <if test="contactUserId != null">
+        contact_user_id = #{contactUserId,jdbcType=BIGINT},
+      </if>
+      <if test="mobileArea != null">
+        mobile_area = #{mobileArea,jdbcType=INTEGER},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.huang.pims.beans.base.PersonalAddressInfo">
+    update personal_address_info
+    set country_id = #{countryId,jdbcType=BIGINT},
+      province_id = #{provinceId,jdbcType=BIGINT},
+      city_id = #{cityId,jdbcType=BIGINT},
+      area_id = #{areaId,jdbcType=BIGINT},
+      detailed_address = #{detailedAddress,jdbcType=VARCHAR},
+      postal_code = #{postalCode,jdbcType=VARCHAR},
+      contact_name = #{contactName,jdbcType=VARCHAR},
+      contact_user_id = #{contactUserId,jdbcType=BIGINT},
+      mobile_area = #{mobileArea,jdbcType=INTEGER},
+      mobile = #{mobile,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
