@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huang.pims.finance.expense.mapper.ExpenseTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.huang.pims.finance.expense.model.ExpenseType">
+        <result property="id" column="id" jdbcType="BIGINT"/>
+        <result property="expenseClassId" column="expense_class_id" jdbcType="BIGINT"/>
+        <result property="expenseTypeName" column="expense_type_name" jdbcType="VARCHAR"/>
+        <result property="expenseTypeIcon" column="expense_type_icon" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="VARCHAR"/>
+        <result property="createdBy" column="created_by" jdbcType="BIGINT"/>
+        <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+        <result property="modifiedBy" column="modified_by" jdbcType="BIGINT"/>
+        <result property="modifiedAt" column="modified_at" jdbcType="TIMESTAMP"/>
+    </resultMap>
+    
+    <sql id="Base_Column_List">id, expense_class_id, expense_type_name, expense_type_icon, status, created_by, created_at, modified_by, modified_at</sql>
+
+    <select id="selectByPrimaryKey" parameterType="Long" resultMap="BaseResultMap">
+        select 
+        id, expense_class_id, expense_type_name, expense_type_icon, status, created_by, created_at, modified_by, modified_at        
+        from finance_expense_type
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    
+    <select id="selectAll" resultMap="BaseResultMap">
+        select 
+        id, expense_class_id, expense_type_name, expense_type_icon, status, created_by, created_at, modified_by, modified_at        
+        from finance_expense_type
+    </select>
+    
+    <select id="selectByStatus" parameterType="string" resultMap="BaseResultMap">
+        select 
+        id, expense_class_id, expense_type_name, expense_type_icon, status, created_by, created_at, modified_by, modified_at        
+        from finance_expense_type
+        where status = #{status,jdbcType=CHAR}
+    </select>
+    
+    <select id="selectBy" parameterType="com.huang.pims.finance.expense.model.ExpenseType" resultMap="BaseResultMap">
+        select 
+        id, expense_class_id, expense_type_name, expense_type_icon, status, created_by, created_at, modified_by, modified_at        
+        from finance_expense_type
+        where 1=1
+        <if test="expenseClassId != null">
+            and expense_class_id = #{expenseClassId,jdbcType=BIGINT}
+        </if>
+        <if test="expenseTypeName != null and expenseTypeName != ''">
+            and expense_type_name = #{expenseTypeName,jdbcType=VARCHAR}
+        </if>
+        <if test="expenseTypeIcon != null and expenseTypeIcon != ''">
+            and expense_type_icon = #{expenseTypeIcon,jdbcType=VARCHAR}
+        </if>
+        <if test="status != null and status != ''">
+            and status = #{status,jdbcType=VARCHAR}
+        </if>
+        <if test="createdBy != null">
+            and created_by = #{createdBy,jdbcType=BIGINT}
+        </if>
+        <if test="createdAt != null">
+            and created_at = #{createdAt,jdbcType=TIMESTAMP}
+        </if>
+        <if test="modifiedBy != null">
+            and modified_by = #{modifiedBy,jdbcType=BIGINT}
+        </if>
+        <if test="modifiedAt != null">
+            and modified_at = #{modifiedAt,jdbcType=TIMESTAMP}
+        </if>
+    </select>
+    
+    <insert id="insert" parameterType="com.huang.pims.finance.expense.model.ExpenseType" keyProperty="id" useGeneratedKeys="true">
+        insert into finance_expense_type
+        <trim prefix="(" suffix=")" suffixOverrides=",">id,expense_class_id,expense_type_name,expense_type_icon,created_by,</trim>
+        values 
+        <trim prefix="(" suffix=")" suffixOverrides=",">#{id,jdbcType=BIGINT},#{expenseClassId,jdbcType=BIGINT},#{expenseTypeName,jdbcType=VARCHAR},#{expenseTypeIcon,jdbcType=VARCHAR},#{createdBy,jdbcType=BIGINT},</trim>
+    </insert>
+    
+    <insert id="insertSelective" parameterType="com.huang.pims.finance.expense.model.ExpenseType" keyProperty="id" useGeneratedKeys="true">
+        insert into finance_expense_type 
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="expenseClassId != null">
+                expense_class_id,
+            </if>
+            <if test="expenseTypeName != null and expenseTypeName != ''">
+                expense_type_name,
+            </if>
+            <if test="expenseTypeIcon != null and expenseTypeIcon != ''">
+                expense_type_icon,
+            </if>
+            <if test="createdBy != null">
+                created_by,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="expenseClassId != null">
+                #{expenseClassId,jdbcType=BIGINT},
+            </if>
+            <if test="expenseTypeName != null and expenseTypeName != ''">
+                #{expenseTypeName,jdbcType=VARCHAR},
+            </if>
+            <if test="expenseTypeIcon != null and expenseTypeIcon != ''">
+                #{expenseTypeIcon,jdbcType=VARCHAR},
+            </if>
+            <if test="status != null and status != ''">
+                #{status,jdbcType=VARCHAR},
+            </if>
+            <if test="createdBy != null">
+                #{createdBy,jdbcType=BIGINT},
+            </if>
+        </trim> 
+    </insert>
+    
+    <update id="updateByPrimaryKeySelective" parameterType="com.huang.pims.finance.expense.model.ExpenseType">
+    update finance_expense_type
+    <set>
+        <if test="expenseClassId != null">
+            expense_class_id = #{expenseClassId,jdbcType=BIGINT},
+        </if>      
+        <if test="expenseTypeName != null and expenseTypeName != ''">
+            expense_type_name = #{expenseTypeName,jdbcType=VARCHAR},
+        </if>      
+        <if test="expenseTypeIcon != null and expenseTypeIcon != ''">
+            expense_type_icon = #{expenseTypeIcon,jdbcType=VARCHAR},
+        </if>      
+        <if test="status != null and status != ''">
+            status = #{status,jdbcType=VARCHAR},
+        </if>      
+        <if test="modifiedBy != null">
+            modified_by = #{modifiedBy,jdbcType=BIGINT},
+        </if>      
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+    </update>
+    
+    <update id="updateByPrimaryKey" parameterType="com.huang.pims.finance.expense.model.ExpenseType">
+    update finance_wallet_class
+    <trim prefix="set " suffix=" " suffixOverrides=",">
+        expense_class_id = #{expenseClassId,jdbcType=BIGINT},
+        expense_type_name = #{expenseTypeName,jdbcType=VARCHAR},
+        expense_type_icon = #{expenseTypeIcon,jdbcType=VARCHAR},
+        modified_by = #{modifiedBy,jdbcType=BIGINT},
+    </trim>
+    where id = #{id,jdbcType=BIGINT}
+    </update>
+    
+    <delete id="deleteByPrimaryKey" parameterType="Long">
+        delete from finance_expense_type where id = #{id,jdbcType=BIGINT}
+    </delete>
+
+</mapper>

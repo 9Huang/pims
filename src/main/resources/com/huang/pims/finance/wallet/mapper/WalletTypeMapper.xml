@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huang.pims.finance.wallet.mapper.WalletTypeMapper">
+
+    <resultMap id="BaseResultMap" type="com.huang.pims.finance.wallet.model.WalletType">
+        <result property="id" column="id" jdbcType="BIGINT"/>
+        <result property="walletTypeName" column="wallet_type_name" jdbcType="VARCHAR"/>
+        <result property="relatedPlatformId" column="related_platform_id" jdbcType="BIGINT"/>
+        <result property="walletClassId" column="wallet_class_id" jdbcType="BIGINT"/>
+        <result property="status" column="status" jdbcType="VARCHAR"/>
+        <result property="createdBy" column="created_by" jdbcType="BIGINT"/>
+        <result property="createdAt" column="created_at" jdbcType="TIMESTAMP"/>
+        <result property="modifiedBy" column="modified_by" jdbcType="BIGINT"/>
+        <result property="modifiedAt" column="modified_at" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <resultMap id="ListResultMap" type="com.huang.pims.finance.wallet.model.WalletTypeDO">
+        <result property="walletClassId" column="wallet_class_id" jdbcType="BIGINT"/>
+        <result property="walletClassName" column="wallet_class_name" jdbcType="VARCHAR"/>
+        <result property="walletTypeId" column="wallet_type_id" jdbcType="BIGINT"/>
+        <result property="walletTypeName" column="wallet_type_name" jdbcType="VARCHAR"/>
+        <result property="status" column="status" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <sql id="Base_Column_List">id, wallet_type_name, related_platform_id, wallet_class_id, status, created_by, created_at, modified_by, modified_at</sql>
+
+    <select id="selectByPrimaryKey" parameterType="Long" resultMap="BaseResultMap">
+        select 
+        id, wallet_type_name, related_platform_id, wallet_class_id, status, created_by, created_at, modified_by, modified_at        
+        from finance_wallet_type
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+
+    <select id="selectAll" resultMap="BaseResultMap">
+        select
+        id, wallet_type_name, related_platform_id, wallet_class_id, status, created_by, created_at, modified_by, modified_at
+        from finance_wallet_type
+    </select>
+    
+    <select id="selectByStatus" parameterType="string" resultMap="BaseResultMap">
+        select 
+        id, wallet_type_name, related_platform_id, wallet_class_id, status, created_by, created_at, modified_by, modified_at        
+        from finance_wallet_type
+        where status = #{status,jdbcType=CHAR}
+    </select>
+
+    <select id="selectBy" parameterType="com.huang.pims.finance.wallet.model.WalletType" resultMap="BaseResultMap" >
+        select
+        id, wallet_type_name, related_platform_id, wallet_class_id, status, created_by, created_at, modified_by, modified_at
+        from finance_wallet_type
+        where 1=1
+        <if test="status != null">
+            and status = #{status,jdbcType=CHAR}
+        </if>
+        <if test="walletClassId != null">
+            and wallet_class_id = #{walletClassId,jdbcType=BIGINT}
+        </if>
+    </select>
+
+    <select id="queryBy" parameterType="com.huang.pims.finance.wallet.model.WalletType" resultMap="ListResultMap" >
+        SELECT
+            fwt.wallet_class_id,
+            fwc.class_name AS 'wallet_class_name',
+            fwt.id AS 'wallet_type_id',
+            fwt.wallet_type_name,
+            fwt.status
+        FROM
+            finance_wallet_type fwt
+        LEFT JOIN finance_wallet_class fwc ON fwc.id = fwt.wallet_class_id
+        where 1=1
+        <if test="status != null">
+            and fwt.status = #{status,jdbcType=CHAR}
+        </if>
+        <if test="walletClassId != null">
+            and fwt.wallet_class_id = #{walletClassId,jdbcType=BIGINT}
+        </if>
+    </select>
+
+    <select id="queryAll" resultMap="ListResultMap">
+        SELECT
+            fwt.wallet_class_id,
+            fwc.class_name AS 'wallet_class_name',
+            fwt.id AS 'wallet_type_id',
+            fwt.wallet_type_name,
+            fwt.status
+        FROM
+            finance_wallet_type fwt
+        LEFT JOIN finance_wallet_class fwc ON fwc.id = fwt.wallet_class_id
+    </select>
+    
+    <insert id="insert" parameterType="com.huang.pims.finance.wallet.model.WalletType" keyProperty="id" useGeneratedKeys="true">
+        insert into finance_wallet_type(id, wallet_type_name, related_platform_id, wallet_class_id, created_by)
+        values (#{id,jdbcType=BIGINT}, #{walletTypeName,jdbcType=VARCHAR}, #{relatedPlatformId,jdbcType=BIGINT}, #{walletClassId,jdbcType=BIGINT}, #{createdBy,jdbcType=BIGINT})
+    </insert>
+    
+    <insert id="insertSelective" parameterType="com.huang.pims.finance.wallet.model.WalletType" keyProperty="id" useGeneratedKeys="true">
+        insert into finance_wallet_type 
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="walletTypeName != null and walletTypeName != ''">
+                wallet_type_name,
+            </if>
+            <if test="relatedPlatformId != null">
+                related_platform_id,
+            </if>
+            <if test="walletClassId != null">
+                wallet_class_id,
+            </if>
+            <if test="createdBy != null">
+                created_by,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="walletTypeName != null and walletTypeName != ''">
+                #{walletTypeName,jdbcType=VARCHAR},
+            </if>
+            <if test="relatedPlatformId != null">
+                #{relatedPlatformId,jdbcType=BIGINT},
+            </if>
+            <if test="walletClassId != null">
+                #{walletClassId,jdbcType=BIGINT},
+            </if>
+            <if test="createdBy != null">
+                #{createdBy,jdbcType=BIGINT},
+            </if>
+        </trim> 
+    </insert>
+    
+    <update id="updateByPrimaryKeySelective" parameterType="com.huang.pims.finance.wallet.model.WalletType">
+    update finance_wallet_type
+    <set>
+        <if test="walletTypeName != null and walletTypeName != ''">
+            wallet_type_name = #{walletTypeName,jdbcType=VARCHAR},
+        </if>      
+        <if test="relatedPlatformId != null">
+            related_platform_id = #{relatedPlatformId,jdbcType=BIGINT},
+        </if>      
+        <if test="walletClassId != null">
+            wallet_class_id = #{walletClassId,jdbcType=BIGINT},
+        </if>      
+        <if test="status != null and status != ''">
+            status = #{status,jdbcType=VARCHAR},
+        </if>
+        <if test="modifiedBy != null">
+            modified_by = #{modifiedBy,jdbcType=BIGINT},
+        </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+    </update>
+    
+    <update id="updateByPrimaryKey" parameterType="com.huang.pims.finance.wallet.model.WalletType">
+    update finance_wallet_class
+    <trim prefix="set " suffix=" " suffixOverrides=",">
+        wallet_type_name = #{walletTypeName,jdbcType=VARCHAR},
+        related_platform_id = #{relatedPlatformId,jdbcType=BIGINT},
+        wallet_class_id = #{walletClassId,jdbcType=BIGINT},
+        modified_by = #{modifiedBy,jdbcType=BIGINT},
+    </trim>
+    where id = #{id,jdbcType=BIGINT}
+    </update>
+    
+    <delete id="deleteByPrimaryKey" parameterType="Long">
+        delete from finance_wallet_type where id = #{id,jdbcType=BIGINT}
+    </delete>
+
+</mapper>

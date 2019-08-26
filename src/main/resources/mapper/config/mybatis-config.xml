@@ -7,6 +7,10 @@
     <properties resource="mybatis-config.properties">
         <!-- 从MyBatis 3.4.2开始，你可以为占位符指定一个默认值。这个特性默认是关闭的。可以通过添加以下属性来开启这个特性 -->
         <property name="org.apache.ibatis.parsing.PropertyParser.enable-default-value" value="true"/>
+        <!-- 修改默认值的分隔符 -->
+        <!--<property name="org.apache.ibatis.parsing.PropertyParser.default-value-separator" value="?:"/>-->
+
+
         <!--<property name="userName" value="${userName:root}"></property>-->
         <!--<property name="password" value="${password:1024}"></property>-->
     </properties>
@@ -60,22 +64,16 @@
         <!-- 指定 Mybatis 创建具有延迟加载能力的对象所用到的代理工具。 -->
         <setting name="proxyFactory" value="JAVASSIST"/>
     </settings>
-    <!-- 类型命名 -->
-    <!--
-    <typeAliases>
-        <typeAlias type="com.huang.pims.mapper.base.PersonalBaseInfoMapper" alias="personalBaseInfo" />
-    </typeAliases>
-    -->
+    <!-- 类型别名 -->
+    <typeAliases></typeAliases>
     <!-- 类型处理器 -->
-    <!--<typehandlers></typehandlers>-->
+    <typeHandlers></typeHandlers>
     <!-- 对象工厂 -->
     <!--<objectFactory type=""/>-->
+    <!--<objectWrapperFactory type=""/>-->
+    <!--<reflectorFactory type=""/>-->
     <!-- 插件 -->
-    <!--
-    <plugins>
-        <plugin interceptor="antlr"></plugin>
-    </plugins>
-    -->
+    <plugins></plugins>
     <!-- 配置环境 -->
     <!--
     <environments default="development">
@@ -86,6 +84,7 @@
                 <property name="url" value=""/>
                 <property name="username" value=""/>
                 <property name="password" value=""/>
+                <property name="defaultTransactionIsolationLevel" value=""/>
             </dataSource>
         </environment>
     </environments>

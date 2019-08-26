@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--<script type="text/javascript" th:src="@{/js/demo/index.js}" />-->
+</head>
+<body>
+
+<div>普通的Java字符串：<p th:text="${javaString}" /></div>
+
+<div>properties文件种的属性：<p th:text="#{huang.msg('黄')}" /></div>
+
+<div>带有样式的Java字符串：<p th:utext="${labelString}" /></div>
+
+<div>显示对象：方式一</div>
+<div>
+    <p th:text="'字符串：'+${demo.stringField}" />
+    <p th:text="'整数：'+${demo.intField}" />
+    <p th:text="'日期：'+${#dates.format(demo.dateField,'yyyy-MM-dd')}" />
+</div>
+<br />
+<div>显示对象：方式二</div>
+<div th:object="${demo}">
+    <p th:text="'字符串：'+*{stringField}" />
+    <p th:text="'整数：'+*{intField}" />
+    <p th:text="'日期：'+*{#dates.format(dateField,'yyyy-MM-dd')}" />
+</div>
+<div><a th:href="@{/demo/href}" >a标签访问Controller方法</a></div>
+<div><a th:href="@{static_index.html}" >a标签访问静态html</a></div>
+
+<div>遍历List-str</div>
+<table border="1">
+    <thead>
+    <th>value</th><th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+        <tr th:each="s,l:${stringList}" >
+            <td th:text="${s}"/>
+            <td th:text="${l.odd}"/>
+            <td th:text="${l.even}"/>
+            <td th:text="${l.count}"/>
+            <td th:text="${l.current}"/>
+            <td th:text="${l.first}"/>
+            <td th:text="${l.index}"/>
+            <td th:text="${l.last}"/>
+            <td th:text="${l.size}"/>
+        </tr>
+    </tbody>
+</table>
+<div>遍历List-obj</div>
+<table border="1">
+    <thead>
+    <th>stringField</th><th>intField</th><th>stringField</th>
+    <th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+    <tr th:each="d,l:${demoList}" >
+        <td th:text="${d.stringField}"/>
+        <td th:text="${d.intField}"/>
+        <td th:text="*{#dates.format(d.dateField,'yyyy-MM-dd')}"/>
+        <td th:text="${l.odd}"/>
+        <td th:text="${l.even}"/>
+        <td th:text="${l.count}"/>
+        <td th:text="${l.current}"/>
+        <td th:text="${l.first}"/>
+        <td th:text="${l.index}"/>
+        <td th:text="${l.last}"/>
+        <td th:text="${l.size}"/>
+    </tr>
+    </tbody>
+</table>
+<div>遍历Set-str</div>
+<table border="1">
+    <thead>
+    <th>value</th><th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+    <tr th:each="s,l:${stringSet}" >
+        <td th:text="${s}"/>
+        <td th:text="${l.odd}"/>
+        <td th:text="${l.even}"/>
+        <td th:text="${l.count}"/>
+        <td th:text="${l.current}"/>
+        <td th:text="${l.first}"/>
+        <td th:text="${l.index}"/>
+        <td th:text="${l.last}"/>
+        <td th:text="${l.size}"/>
+    </tr>
+    </tbody>
+</table>
+<div>遍历Set-obj</div>
+<table border="1">
+    <thead>
+    <th>stringField</th><th>intField</th><th>stringField</th>
+    <th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+    <tr th:each="d,l:${demoSet}" >
+        <td th:text="${d.stringField}"/>
+        <td th:text="${d.intField}"/>
+        <td th:text="*{#dates.format(d.dateField,'yyyy-MM-dd')}"/>
+        <td th:text="${l.odd}"/>
+        <td th:text="${l.even}"/>
+        <td th:text="${l.count}"/>
+        <td th:text="${l.current}"/>
+        <td th:text="${l.first}"/>
+        <td th:text="${l.index}"/>
+        <td th:text="${l.last}"/>
+        <td th:text="${l.size}"/>
+    </tr>
+    </tbody>
+</table>
+<div>遍历Map-str-str</div>
+<table border="1">
+    <thead>
+    <th>key</th><th>value</th>
+    <th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+    <tr th:each="e,l:${stringMap}" >
+        <td th:text="${e.key}"/>
+        <td th:text="${e.value}"/>
+        <td th:text="${l.odd}"/>
+        <td th:text="${l.even}"/>
+        <td th:text="${l.count}"/>
+        <td th:text="${l.current}"/>
+        <td th:text="${l.first}"/>
+        <td th:text="${l.index}"/>
+        <td th:text="${l.last}"/>
+        <td th:text="${l.size}"/>
+    </tr>
+    </tbody>
+</table>
+<div>遍历Map-str-obj</div>
+<table border="1">
+    <thead>
+    <th>key</th><th>stringField</th><th>intField</th><th>stringField</th>
+    <th>odd</th><th>even</th><th>count</th><th>current</th><th>first</th><th>index</th><th>last</th><th>size</th>
+    </thead>
+    <tbody>
+    <tr th:each="e,l:${demoMap}" >
+        <td th:text="${e.key}"/>
+        <td th:text="${e.value.stringField}"/>
+        <td th:text="${e.value.intField}"/>
+        <td th:text="*{#dates.format(e.value.dateField,'yyyy-MM-dd')}"/>
+        <td th:text="${l.odd}"/>
+        <td th:text="${l.even}"/>
+        <td th:text="${l.count}"/>
+        <td th:text="${l.current}"/>
+        <td th:text="${l.first}"/>
+        <td th:text="${l.index}"/>
+        <td th:text="${l.last}"/>
+        <td th:text="${l.size}"/>
+    </tr>
+    </tbody>
+</table>
+
+<div>格式化 Calendar</div>
+<div></div>
+
+
+
+</body>
+</html>

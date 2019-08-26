@@ -40,4 +40,13 @@ public enum SexEnum {
         SexEnum sexEnum = getByCode(code);
         return Objects.isNull(sexEnum) ? null : sexEnum.getDesc();
     }
+
+    @Override
+    public String toString() {
+        return new StringBuilder().append("super.toString()=").append(super.toString())
+                .append("\n").append(",name=").append(this.name())
+                .append("\n").append(",ordinal=").append(this.ordinal())
+                .append("\n").append(",code=").append(this.code)
+                .append("\n").append(",desc=").append(this.desc).toString();
+    }
 }

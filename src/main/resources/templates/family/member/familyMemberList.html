@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN">
+
+<head th:replace="fragments/header :: head(~{::title}, ~{}, ~{::script})">
+    <title>家庭成员列表</title>
+    <script type="text/javascript" th:src="@{/js/crud.js}"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group form-group-lg">
+            <div class="col-sm-10">
+                <input class="form-control" type="text" id="memberName" name="memberName" placeholder="家庭成员名称" />
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-primary btn-lg">查询</button>
+                <!--
+                backdrop：’static’指的是点击背景空白处不被关闭。
+                keyboard:false指的是触发键盘esc事件时不关闭。
+                -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#save_modal" data-backdrop="static" data-keyboard="false">新增</button>
+            </div>
+        </div>
+    </form>
+    <table class="table table-hover" id="list_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>名称</th>
+            <th>昵称</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="familyMember,l:${familyMemberList}" >
+            <td th:text="${familyMember.id}"/>
+            <td th:text="${familyMember.memberName}"/>
+            <td th:text="${familyMember.nickName}"/>
+            <td th:text="${familyMember.statusEnum.desc}"/>
+            <td>
+                <button type="button" th:if="${familyMember.status eq '1'}" class="btn btn-primary btn-xs open_save_modal" data-th-record_id="${familyMember.id}">修改</button>
+                <button type="button" th:if="${familyMember.status eq '1'}" class="btn btn-primary btn-xs open_delete_confirm_modal" data-th-record_id="${familyMember.id}">删除</button>
+                <button type="button" th:if="${familyMember.status eq '0'}" class="btn btn-primary btn-xs open_recover_confirm_modal" data-th-record_id="${familyMember.id}">恢复</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="save_modal" tabindex="-1" role="dialog" aria-labelledby="save_modal_label">
+    <div class="modal-dialog" role="document">
+        <form class="form-horizontal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="save_modal_label">家庭成员</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="form-data" id="id" name="id" value="" />
+                    <div class="form-group">
+                        <label for="memberName" class="col-sm-2 control-label">成员名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-data" id="memberName" name="memberName" placeholder="成员名称" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="nickName" class="col-sm-2 control-label">成员昵称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-data" id="nickName" name="nickName" placeholder="成员昵称" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="save_button">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="delete_confirm_modal" tabindex="-1" role="dialog" aria-labelledby="delete_confirm_modal_label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="delete_confirm_modal_label">操作提示</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="id" class="form-data" value="" />
+                <div class="form-group">
+                    <label for="memberName" class="col-sm-12 control-label">
+                        确定要删除【<span class="form-data" name="memberName"></span>】吗？？？
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="delete_button">确认删除</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

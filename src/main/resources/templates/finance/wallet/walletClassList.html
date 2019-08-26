@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>钱包分类列表</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.4.1/css/bootstrap.min.css}" />
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.4.1/js/bootstrap.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/js/crud.js}"></script>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <form class="form-horizontal">
+        <div class="form-group form-group-lg">
+            <div class="col-sm-10">
+                <input class="form-control" type="text" id="memberName" name="memberName" placeholder="钱包类别名称" />
+            </div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-primary btn-lg">查询</button>
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#save_modal" data-backdrop="static" data-keyboard="false">新增</button>
+            </div>
+        </div>
+    </form>
+
+    <table class="table table-hover" id="list_table">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>类别编码</th>
+            <th>类别名称</th>
+            <th>类别描述</th>
+            <th>状态</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="walletClass,l:${walletClassList}" >
+            <td th:text="${walletClass.id}"/>
+            <td th:text="${walletClass.classCode}"/>
+            <td th:text="${walletClass.className}"/>
+            <td th:text="${walletClass.classDesc}"/>
+            <td th:text="${walletClass.statusEnum.desc}"/>
+            <td>
+                <button type="button" th:if="${walletClass.status eq '1'}" class="btn btn-primary btn-xs open_save_modal" data-th-record_id="${walletClass.id}">修改</button>
+                <button type="button" th:if="${walletClass.status eq '1'}" class="btn btn-primary btn-xs open_delete_confirm_modal" data-th-record_id="${walletClass.id}">删除</button>
+                <button type="button" th:if="${walletClass.status eq '0'}" class="btn btn-primary btn-xs open_recover_confirm_modal" data-th-record_id="${walletClass.id}">恢复</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="modal fade" id="save_modal" tabindex="-1" role="dialog" aria-labelledby="save_modal_label">
+    <div class="modal-dialog" role="document">
+        <form class="form-horizontal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="save_modal_label">钱包类别</h4>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" class="form-data" id="id" name="id" value="" />
+                    <div class="form-group">
+                        <label for="classCode" class="col-sm-2 control-label">类别编码</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-data" id="classCode" name="classCode" placeholder="类别编码" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="className" class="col-sm-2 control-label">类别名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-data" id="className" name="className" placeholder="类别名称" value="" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="classDesc" class="col-sm-2 control-label">类别描述</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control form-data" rows="3" id="classDesc" name="classDesc" placeholder="类别描述"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="save_button">保存</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modal fade" id="delete_confirm_modal" tabindex="-1" role="dialog" aria-labelledby="delete_confirm_modal_label">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="delete_confirm_modal_label">操作提示</h4>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" name="id" class="form-data" value="" />
+                <div class="form-group">
+                    <label for="memberName" class="col-sm-12 control-label">
+                        确定要删除【<span class="form-data" name="className"></span>】吗？？？
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="button" class="btn btn-primary" id="delete_button">确认删除</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

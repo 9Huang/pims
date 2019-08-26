@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<html lang="zh-CN">
+<head th:fragment="head(title,links,scripts)">
+    <meta charset="UTF-8">
+    <title th:replace="${title}">默认标题</title>
+    <script type="text/javascript" th:src="@{/webjars/jquery/3.4.1/jquery.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.4.1/css/bootstrap.min.css}" />
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.4.1/js/bootstrap.min.js}"></script>
+    <th:block th:replace="${links}"/>
+    <th:block th:replace="${scripts}"/>
+</head>
+<body>
+
+</body>
+</html>
