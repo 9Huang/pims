@@ -73,7 +73,7 @@ public class WalletClassController {
 
     @PostMapping(value = "/insert")
     @ResponseBody
-    public WalletClass insert(@RequestBody WalletClass walletClass) {
+    public WalletClassVO insert(@RequestBody WalletClassVO walletClass) {
         return walletClassService.insert(walletClass);
     }
     

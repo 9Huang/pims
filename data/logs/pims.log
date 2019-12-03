@@ -20808,3 +20808,1204 @@ java.sql.SQLSyntaxErrorException: Unknown column 'class_code' in 'field list'
 [pims] [192.168.31.196] [4476] [2019-08-26 23:59:13.109] [INFO] [RMI TCP Connection(7)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
 [pims] [192.168.31.196] [4476] [2019-08-26 23:59:13.109] [INFO] [RMI TCP Connection(7)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
 [pims] [192.168.31.196] [4476] [2019-08-26 23:59:13.129] [INFO] [RMI TCP Connection(7)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 19 ms
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:13.385] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 2844 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:13.746] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:13.796] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:13.796] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:14.774] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:14.785] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:14.868] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 74ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:15.274] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:15.274] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:15.313] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:15.318] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 24ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:15.844] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ccf3803b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.655] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.674] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.684] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.684] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.684] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.813] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:16.813] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 3015 ms
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:17.304] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:18.214] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:18.224] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:18.418] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:18.704] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:18.825] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:19.665] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:21.005] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.087] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.105] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.187] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.215] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.215] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 10.39 seconds (JVM running for 13.386)
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.928] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.935] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:22.954] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 16 ms
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:23.446] [INFO] [RMI TCP Connection(5)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [2844] [2019-08-29 21:34:23.453] [INFO] [RMI TCP Connection(5)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [2844] [2019-08-29 22:00:33.420] [ERROR] [http-nio-9424-exec-7] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2685)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:40)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:558)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy186.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.insertSelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.insertSelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.insert(WalletClassServiceImpl.java:97)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7442c271.insert(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.insert(WalletClassController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [2844] [2019-08-29 22:04:52.521] [ERROR] [http-nio-9424-exec-5] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2685)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:40)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:558)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy186.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.insertSelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.insertSelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.insert(WalletClassServiceImpl.java:97)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7442c271.insert(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.insert(WalletClassController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [2844] [2019-08-29 22:05:34.772] [ERROR] [http-nio-9424-exec-9] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'] with root cause
+org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'classCode' in 'class com.huang.pims.finance.wallet.model.WalletClass'
+	at org.apache.ibatis.reflection.Reflector.getGetInvoker(Reflector.java:419)
+	at org.apache.ibatis.reflection.MetaClass.getGetInvoker(MetaClass.java:164)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.getBeanProperty(BeanWrapper.java:162)
+	at org.apache.ibatis.reflection.wrapper.BeanWrapper.get(BeanWrapper.java:49)
+	at org.apache.ibatis.reflection.MetaObject.getValue(MetaObject.java:122)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextMap.get(DynamicContext.java:94)
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:108)
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2685)
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61)
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212)
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:470)
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:434)
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:44)
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32)
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.TrimSqlNode.apply(TrimSqlNode.java:55)
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:33)
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:41)
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:292)
+	at org.apache.ibatis.executor.statement.BaseStatementHandler.<init>(BaseStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.<init>(PreparedStatementHandler.java:40)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.<init>(RoutingStatementHandler.java:46)
+	at org.apache.ibatis.session.Configuration.newStatementHandler(Configuration.java:558)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:48)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy186.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:63)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.updateByPrimaryKeySelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.updateByPrimaryKeySelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.update(WalletClassServiceImpl.java:104)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7442c271.update(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.update(WalletClassController.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:03.891] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 15444 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:04.489] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:04.646] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:04.647] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:06.726] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:06.727] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:06.878] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 132ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:07.551] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:07.554] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:07.633] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:07.634] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 61ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:09.355] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b914bc86] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.391] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.437] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.489] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.490] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.513] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.785] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:10.785] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 6138 ms
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:11.199] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:12.302] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:12.304] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:12.566] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:12.887] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:13.014] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:14.659] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:19.559] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:20.832] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:20.847] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:20.946] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:20.989] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:20.994] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 18.195 seconds (JVM running for 21.292)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:21.796] [INFO] [RMI TCP Connection(2)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:21.800] [INFO] [RMI TCP Connection(2)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:21.987] [INFO] [RMI TCP Connection(3)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:21.988] [INFO] [RMI TCP Connection(3)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:08:22.012] [INFO] [RMI TCP Connection(3)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 24 ms
+[pims] [192.168.31.196] [15444] [2019-08-29 22:10:25.147] [ERROR] [http-nio-9424-exec-2] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+### The error may involve com.huang.pims.finance.wallet.mapper.WalletClassMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into finance_wallet_class
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy186.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy184.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.insertSelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.insertSelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.insert(WalletClassServiceImpl.java:97)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7ec74544.insert(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.insert(WalletClassController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:38.908] [ERROR] [http-nio-9424-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+### The error may involve com.huang.pims.finance.wallet.mapper.WalletClassMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into finance_wallet_class
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy186.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy184.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.insertSelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.insertSelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.insert(WalletClassServiceImpl.java:97)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7ec74544.insert(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.insert(WalletClassController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:38.913] [ERROR] [http-nio-9424-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims].[dispatcherServlet]] [log] [175] : Servlet.service() for servlet [dispatcherServlet] in context with path [/pims] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
+### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+### The error may involve com.huang.pims.finance.wallet.mapper.WalletClassMapper.insertSelective-Inline
+### The error occurred while setting parameters
+### SQL: insert into finance_wallet_class
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1] with root cause
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:974)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:391)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy186.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:46)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy184.update(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:198)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:185)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy125.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:278)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:58)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy138.insertSelective(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212)
+	at com.sun.proxy.$Proxy139.insertSelective(Unknown Source)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl.insert(WalletClassServiceImpl.java:97)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$FastClassBySpringCGLIB$$883a7f0b.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.cache.interceptor.CacheInterceptor.lambda$invoke$0(CacheInterceptor.java:53)
+	at org.springframework.cache.interceptor.CacheAspectSupport.invokeOperation(CacheAspectSupport.java:365)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:420)
+	at org.springframework.cache.interceptor.CacheAspectSupport.execute(CacheAspectSupport.java:345)
+	at org.springframework.cache.interceptor.CacheInterceptor.invoke(CacheInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at com.huang.pims.finance.wallet.service.impl.WalletClassServiceImpl$$EnhancerBySpringCGLIB$$7ec74544.insert(<generated>)
+	at com.huang.pims.finance.wallet.controller.WalletClassController.insert(WalletClassController.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:38.918] [ERROR] [http-nio-9424-exec-4] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost]] [log] [175] : Exception Processing ErrorPage[errorCode=0, location=/error]
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:298)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:261)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1100)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:915)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:287)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:103)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:223)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:119)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:712)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:461)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:384)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:312)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:394)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:253)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:348)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:173)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+	at sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:93)
+	at sun.nio.ch.IOUtil.write(IOUtil.java:65)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:471)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:134)
+	at org.apache.tomcat.util.net.NioBlockingSelector.write(NioBlockingSelector.java:101)
+	at org.apache.tomcat.util.net.NioSelectorPool.write(NioSelectorPool.java:144)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1225)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:743)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:696)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:686)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:553)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:216)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1149)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:394)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:294)
+	... 42 common frames omitted
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:39.021] [INFO] [Thread-48] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:39.024] [INFO] [Thread-48] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [15444] [2019-08-29 22:13:40.491] [INFO] [Thread-48] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:32.493] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 7524 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:32.993] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:33.055] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:33.057] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:33.881] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:33.881] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [7524] [2019-08-29 22:16:33.961] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 71ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:43.079] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 4660 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:43.650] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:43.773] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:43.774] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:45.268] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:45.268] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:45.410] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 124ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:46.331] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:46.335] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:46.392] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:46.393] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 36ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:47.260] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9be46d83] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.211] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.230] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.241] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.241] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.250] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.390] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.391] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 4617 ms
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:48.812] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:49.813] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:49.815] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:50.012] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:50.358] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:50.528] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:51.858] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:53.104] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:54.296] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:54.345] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:54.432] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:54.466] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:54.469] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 12.601 seconds (JVM running for 14.324)
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:55.040] [INFO] [RMI TCP Connection(5)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:55.041] [INFO] [RMI TCP Connection(5)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:55.059] [INFO] [RMI TCP Connection(5)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 18 ms
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:55.250] [INFO] [RMI TCP Connection(6)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [4660] [2019-08-29 22:16:55.254] [INFO] [RMI TCP Connection(6)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [4660] [2019-08-29 22:40:37.681] [INFO] [Thread-37] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:40:37.683] [INFO] [Thread-37] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [4660] [2019-08-29 22:40:38.813] [INFO] [Thread-37] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:50.662] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 17668 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:50.954] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:51.038] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:51.039] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:52.917] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:52.917] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:53.033] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 99ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:53.626] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:53.628] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:53.670] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:53.670] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:54.735] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47b78de2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:55.788] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:55.813] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:55.828] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:55.828] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:55.838] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:56.003] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:56.004] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 4965 ms
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:56.453] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:57.622] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:57.624] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:57.926] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:58.226] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:58.380] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [17668] [2019-08-29 22:40:59.806] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:01.074] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:02.252] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:02.265] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:02.360] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:02.403] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:02.406] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 12.536 seconds (JVM running for 14.129)
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:03.238] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:03.239] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:03.256] [INFO] [RMI TCP Connection(4)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 17 ms
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:03.585] [INFO] [RMI TCP Connection(5)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [17668] [2019-08-29 22:41:03.589] [INFO] [RMI TCP Connection(5)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:48.863] [INFO] [Thread-34] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:48.864] [INFO] [Thread-34] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:49.993] [INFO] [Thread-34] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:50.992] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 17668 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:50.993] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:52.514] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:52.515] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:52.569] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 53ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.109] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.111] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.152] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.153] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 38ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.468] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$47b78de2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.961] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.965] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.966] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:53.967] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.007] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.007] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 3008 ms
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.226] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.635] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-2} inited
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.644] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:54.801] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.299] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.796] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.807] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.885] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.891] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.892] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 4.99 seconds (JVM running for 1207.616)
+[pims] [192.168.31.196] [17668] [2019-08-29 23:00:55.898] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener] [onApplicationEvent] [56] : Condition evaluation unchanged
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:32.045] [INFO] [http-nio-9424-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:32.047] [INFO] [http-nio-9424-exec-1] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:32.060] [INFO] [http-nio-9424-exec-1] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 13 ms
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:56.059] [INFO] [Thread-54] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:56.063] [INFO] [Thread-54] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17668] [2019-08-29 23:01:56.070] [INFO] [Thread-54] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-2} closed
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:31.030] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 16944 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:31.331] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:31.429] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:31.430] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.241] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.241] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.373] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 116ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.889] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.891] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.923] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:33.923] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:34.522] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$153967fb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.334] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.351] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.362] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.362] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.371] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.511] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.512] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 4081 ms
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:35.932] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:36.894] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:36.896] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:37.077] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:37.356] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:37.475] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:38.624] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:39.844] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.010] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.023] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.144] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.176] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.180] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 10.894 seconds (JVM running for 12.488)
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.555] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.555] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.575] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 19 ms
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.756] [INFO] [RMI TCP Connection(1)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [16944] [2019-08-29 23:02:41.760] [INFO] [RMI TCP Connection(1)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [16944] [2019-08-30 00:01:37.577] [INFO] [Thread-35] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [16944] [2019-08-30 00:01:37.581] [INFO] [Thread-35] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [16944] [2019-08-30 00:01:38.737] [INFO] [Thread-35] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:22.803] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 4440 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:23.093] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:23.179] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:23.180] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:24.399] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:24.400] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:24.524] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 107ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:25.108] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:25.111] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:25.150] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:25.150] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 23ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:25.877] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85d809e2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:26.865] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:26.887] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:26.899] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:26.900] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:26.909] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:27.055] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:27.056] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 3876 ms
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:27.529] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:28.758] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:28.761] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:29.100] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:29.440] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:29.642] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:31.150] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:32.651] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:33.988] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.002] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.100] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.138] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.142] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 12.131 seconds (JVM running for 16.18)
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.878] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.879] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:34.905] [INFO] [RMI TCP Connection(2)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 25 ms
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:35.340] [INFO] [RMI TCP Connection(3)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [4440] [2019-09-02 22:05:35.344] [INFO] [RMI TCP Connection(3)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [4440] [2019-09-03 00:20:17.124] [INFO] [Thread-37] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [4440] [2019-09-03 00:20:17.132] [INFO] [Thread-37] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [4440] [2019-09-03 00:20:18.794] [INFO] [Thread-37] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:23.021] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarting] [50] : Starting PimsApplication on HJ-PC-710S with PID 17232 (D:\Workspaces\IDEA\pims\target\classes started by huang in D:\Workspaces\IDEA\pims)
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:23.494] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStartupProfileInfo] [675] : No active profile set, falling back to default profiles: default
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:23.577] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:23.578] [INFO] [restartedMain] [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] [logTo] [227] : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:25.047] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:25.048] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:25.201] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 135ms. Found 1 repository interfaces.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:26.153] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [multipleStoresDetected] [244] : Multiple Spring Data modules found, entering strict repository configuration mode!
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:26.156] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [126] : Bootstrapping Spring Data repositories in DEFAULT mode.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:26.222] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] [isStrictRepositoryCandidate] [363] : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.huang.pims.family.repository.FamilyMemberRepository.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:26.222] [INFO] [restartedMain] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] [registerRepositoriesIn] [182] : Finished Spring Data repository scanning in 31ms. Found 0 repository interfaces.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:26.982] [INFO] [restartedMain] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] [postProcessAfterInitialization] [330] : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$99498af8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.015] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [initialize] [90] : Tomcat initialized with port(s): 9424 (http)
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.037] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Initializing ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.055] [INFO] [restartedMain] [org.apache.catalina.core.StandardService] [log] [173] : Starting service [Tomcat]
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.056] [INFO] [restartedMain] [org.apache.catalina.core.StandardEngine] [log] [173] : Starting Servlet engine: [Apache Tomcat/9.0.14]
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.069] [INFO] [restartedMain] [org.apache.catalina.core.AprLifecycleListener] [log] [173] : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_162\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_162\bin;C:\Program Files\MySQL\MySQL Server 5.7\bin;D:\softwares\apache-maven-3.5.3\bin;C:\softwares\Git\bin;C:\softwares\x64\erl10.0.1\bin;C:\softwares\x64\RabbitMQ Server\rabbitmq_server-3.7.7\sbin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Server 5.5\bin;D:\softwares\BaiduPCS-Go-v3.5.2-windows-x64;C:\WINDOWS\System32\OpenSSH\;C:\softwares\Git\cmd;C:\Program Files\MySQL\MySQL Utilities 1.6\;D:\Workspaces\nodejs\npm_prefix;C:\dev\Program Files\nodejs\;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Local\Microsoft\WindowsApps;C:\Users\huang\AppData\Roaming\npm;C:\softwares\VS Code\bin;.]
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.293] [INFO] [restartedMain] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring embedded WebApplicationContext
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.294] [INFO] [restartedMain] [org.springframework.web.context.ContextLoader] [prepareWebApplicationContext] [296] : Root WebApplicationContext: initialization completed in 4716 ms
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:28.802] [WARN] [restartedMain] [net.sf.ehcache.config.CacheConfiguration] [warnTieredSizing] [1857] : Configuration problem for cache pims: MaxEntriesLocalHeap equal or greater than MaxEntriesLocalDisk. This will result in useless disk storage.
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:30.090] [INFO] [restartedMain] [org.hibernate.Version] [logVersion] [46] : HHH000412: Hibernate Core {5.3.7.Final}
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:30.092] [INFO] [restartedMain] [org.hibernate.cfg.Environment] [<clinit>] [213] : HHH000206: hibernate.properties not found
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:30.399] [INFO] [restartedMain] [org.hibernate.annotations.common.Version] [<clinit>] [49] : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:30.752] [INFO] [restartedMain] [com.alibaba.druid.pool.DruidDataSource] [init] [947] : {dataSource-1} inited
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:30.903] [INFO] [restartedMain] [org.hibernate.dialect.Dialect] [<init>] [157] : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:32.432] [INFO] [restartedMain] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [buildNativeEntityManagerFactory] [415] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:33.960] [INFO] [restartedMain] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [initialize] [171] : Initializing ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.400] [INFO] [restartedMain] [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] [startServer] [57] : LiveReload server is running on port 35729
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.414] [INFO] [restartedMain] [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] [<init>] [59] : Exposing 14 endpoint(s) beneath base path '/actuator'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.512] [INFO] [restartedMain] [org.apache.coyote.http11.Http11NioProtocol] [log] [173] : Starting ProtocolHandler ["http-nio-9424"]
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.551] [INFO] [restartedMain] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [start] [204] : Tomcat started on port(s): 9424 (http) with context path '/pims'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.555] [INFO] [restartedMain] [com.huang.pims.PimsApplication] [logStarted] [59] : Started PimsApplication in 13.893 seconds (JVM running for 18.381)
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.989] [INFO] [RMI TCP Connection(1)-192.168.31.196] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/pims]] [log] [173] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:35.990] [INFO] [RMI TCP Connection(1)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [524] : Initializing Servlet 'dispatcherServlet'
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:36.016] [INFO] [RMI TCP Connection(1)-192.168.31.196] [org.springframework.web.servlet.DispatcherServlet] [initServletBean] [546] : Completed initialization in 25 ms
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:36.220] [INFO] [RMI TCP Connection(2)-192.168.31.196] [io.lettuce.core.EpollProvider] [<clinit>] [68] : Starting without optional epoll library
+[pims] [192.168.31.196] [17232] [2019-09-05 21:48:36.230] [INFO] [RMI TCP Connection(2)-192.168.31.196] [io.lettuce.core.KqueueProvider] [<clinit>] [70] : Starting without optional kqueue library
+[pims] [192.168.31.196] [17232] [2019-09-06 00:05:47.827] [INFO] [Thread-41] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor] [shutdown] [208] : Shutting down ExecutorService 'applicationTaskExecutor'
+[pims] [192.168.31.196] [17232] [2019-09-06 00:05:47.833] [INFO] [Thread-41] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] [destroy] [597] : Closing JPA EntityManagerFactory for persistence unit 'default'
+[pims] [192.168.31.196] [17232] [2019-09-06 00:05:49.786] [INFO] [Thread-41] [com.alibaba.druid.pool.DruidDataSource] [close] [1863] : {dataSource-1} closed

@@ -25,7 +25,7 @@ public interface WalletClassService {
 
     List<SelectOption> queryByStatusForSelect(String status);
 
-    WalletClass insert(WalletClass walletClass);
+    WalletClassVO insert(WalletClassVO walletClassVO);
 
     WalletClass update(WalletClass walletClass);
 

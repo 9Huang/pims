@@ -38,7 +38,7 @@
     
     <insert id="insert" parameterType="com.huang.pims.finance.wallet.model.WalletClass" keyProperty="id" useGeneratedKeys="true">
         insert into finance_wallet_class(id, class_icon, class_name, class_desc, created_by)
-        values (#{id,jdbcType=BIGINT}, #{classCode,jdbcType=VARCHAR}, #{className,jdbcType=VARCHAR}, #{classDesc,jdbcType=VARCHAR}, #{createdBy,jdbcType=BIGINT})
+        values (#{id,jdbcType=BIGINT}, #{classIcon,jdbcType=VARCHAR}, #{className,jdbcType=VARCHAR}, #{classDesc,jdbcType=VARCHAR}, #{createdBy,jdbcType=BIGINT})
     </insert>
     
     <insert id="insertSelective" parameterType="com.huang.pims.finance.wallet.model.WalletClass" keyProperty="id" useGeneratedKeys="true">
@@ -47,7 +47,7 @@
             <if test="id != null">
                 id,
             </if>
-            <if test="classCode != null and classCode != ''">
+            <if test="classIcon != null and classIcon != ''">
                 class_icon,
             </if>
             <if test="className != null and className != ''">
@@ -67,8 +67,8 @@
             <if test="id != null">
                 #{id,jdbcType=BIGINT},
             </if>
-            <if test="classCode != null and classCode != ''">
-                #{classCode,jdbcType=VARCHAR},
+            <if test="classIcon != null and classIcon != ''">
+                #{classIcon,jdbcType=VARCHAR},
             </if>
             <if test="className != null and className != ''">
                 #{className,jdbcType=VARCHAR},
@@ -88,8 +88,8 @@
     <update id="updateByPrimaryKeySelective" parameterType="com.huang.pims.finance.wallet.model.WalletClass">
     update finance_wallet_class
     <set>
-        <if test="classCode != null and classCode != ''">
-            class_icon = #{classCode,jdbcType=VARCHAR},
+        <if test="classIcon != null and classIcon != ''">
+            class_icon = #{classIcon,jdbcType=VARCHAR},
         </if>      
         <if test="className != null and className != ''">
             class_name = #{className,jdbcType=VARCHAR},
@@ -110,7 +110,7 @@
     <update id="updateByPrimaryKey" parameterType="com.huang.pims.finance.wallet.model.WalletClass">
     update finance_wallet_class
     <trim prefix="set " suffix=" " suffixOverrides=",">
-        class_icon = #{classCode,jdbcType=VARCHAR},
+        class_icon = #{classIcon,jdbcType=VARCHAR},
         class_name = #{className,jdbcType=VARCHAR},
         class_desc = #{classDesc,jdbcType=VARCHAR},
         updated_by = #{updatedBy,jdbcType=BIGINT},

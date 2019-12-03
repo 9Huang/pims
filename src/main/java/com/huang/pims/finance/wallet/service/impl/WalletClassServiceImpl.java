@@ -92,10 +92,13 @@ public class WalletClassServiceImpl implements WalletClassService {
     }
 
     @Override
-    @CachePut(value = Constants.APPLICATION_NAME, key = "'finance.wallet.class.'+#walletClass.id")
-    public WalletClass insert(WalletClass walletClass) {
+    // @CachePut(value = Constants.APPLICATION_NAME, key = "'finance.wallet.class.'+#walletClass.id")
+    public WalletClassVO insert(WalletClassVO walletClassVO) {
+        WalletClass walletClass = new WalletClass();
+        BeanUtils.copyProperties(walletClassVO, walletClass);
         walletClassMapper.insertSelective(walletClass);
-        return walletClass;
+        BeanUtils.copyProperties(walletClass, walletClassVO);
+        return walletClassVO;
     }
 
     @Override
